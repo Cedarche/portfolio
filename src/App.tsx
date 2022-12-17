@@ -3,6 +3,7 @@ import IconButton from '@mui/material/IconButton';
 import Box from '@mui/material/Box';
 import { useTheme, ThemeProvider, createTheme } from '@mui/material/styles';
 import LandingPage from './components/LandingPage';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 export const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
@@ -34,6 +35,9 @@ export default function App() {
           ...(mode === 'light'
             ? {
                 // palette values for light mode
+                background: {
+                  nav: '#fff',
+                },
               }
             : {
                 // palette values for dark mode
@@ -50,7 +54,9 @@ export default function App() {
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
-        <LandingPage />
+        <ParallaxProvider>
+          <LandingPage />
+        </ParallaxProvider>
       </ThemeProvider>
     </ColorModeContext.Provider>
   );
