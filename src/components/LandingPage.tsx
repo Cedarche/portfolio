@@ -23,6 +23,9 @@ export default function LandingPage() {
       <Container>
         <NavBar />
         {theme.palette.mode === 'dark' && <Background />}
+        <div>
+          <h1>Welcome to my page</h1>
+        </div>
       </Container>
     </>
   );
