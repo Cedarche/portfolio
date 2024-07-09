@@ -50,10 +50,11 @@ function Hero2() {
         flex: 1,
         width: "100%",
         height: "120vh",
-        backgroundColor: "#ffffff",
+        // backgroundColor: "#000000",
         // border: '1px solid blue',
         overflow: "hidden", // Prevent actual scrolling
       }}
+      className="bg-black"
     >
       <div className="flex flex-1 flex-row  z-20 m-2 ">
         <div className="flex flex-col flex-2 h-full items-center justify-center z-50 text-white relative">
@@ -78,10 +79,10 @@ function Hero2() {
             animate="visible"
             variants={fadeIn}
           >
-            <h1 className="text-4xl font-roboto font-bold tracking-tight text-white sm:text-6xl">
+            <h1 className="text-4xl font-roboto font-bold tracking-tight text-white sm:text-6xl 2xl:text-8xl">
               Hi, I'm Tom.
             </h1>
-            <p className="mt-6 text-lg leading-8 font-roboto text-gray-100 sm:max-w-md lg:max-w-none text-left">
+            <p className="mt-6 text-lg leading-8 font-roboto text-gray-100 sm:max-w-md lg:max-w-none text-left 2xl:text-2xl">
               I'm a mechanical engineer by profession, but I love to build
               anything and everything - from software to hardware. Most of my
               projects stay in the development phase indefinitely, however a

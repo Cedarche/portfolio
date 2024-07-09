@@ -5,6 +5,7 @@ import ProjectIcons from "./ProjectIcons/ProjectIcons";
 import ProjectFeature1 from "./ProjectFeature1/ProjectFeature1";
 import Experience from "./Experience/Experience";
 import Hero2 from "./Hero/Hero2";
+import Skills from "./Skills/Skills";
 
 export default function Landing() {
   return (
@@ -12,9 +13,9 @@ export default function Landing() {
       <Hero2 />  
       {/* <Navbar2 />    */}
       <ProjectFeature1/>
+      <Skills/>
       <ProjectIcons/>
       {/* <Experience/> */}
-
     </>
   );
 }
