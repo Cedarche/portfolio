@@ -47,7 +47,7 @@ export default function ProjectFeature1() {
           }}
         />
       </div>
-      <div className="mx-auto 2xl:max-w-[1600px] px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
+      <div className="mx-auto max-w-7xl  px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
         <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
           <img className="h-11 rounded-xl" src={SnapLogo2} alt="Your Company" />
           <div className="mt-24 sm:mt-32 lg:mt-16">
